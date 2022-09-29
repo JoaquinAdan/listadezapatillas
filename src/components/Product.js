@@ -16,21 +16,21 @@ const Product = ({ product }) => {
       </div>
       <div className="container-info">
         <div className="container-info-top">
-          <div className="details-container">
+          <div className="details-container name-query-container">
             <h1 className="detail-title">Producto</h1>
-            <span className="detail-text">{product.name}</span>
+            <span className="detail-text name-query">{product.name}</span>
           </div>
-          <div className="details-container">
+          <div className="details-container counter-query-container">
             <h1 className="detail-title">Cantidad</h1>
-            <div className="detail-text">
+            <div className="detail-text counter-container">
               <button className="button-counter" onClick={() => setCounter(counter - 1)}>-</button>
-              <span className="detail-text">{counter}</span>
+              <span className="detail-text counter-query">{counter}</span>
               <button className="button-counter" onClick={() => setCounter(counter + 1)}>+</button>
             </div>
           </div>
-          <div className="details-container">
+          <div className="details-container price-query-container">
             <h1 className="detail-title">Precio</h1>
-            <span className="detail-text">
+            <span className="detail-text price-query">
               $ {parseFloat(product.price) * counter}
             </span>
           </div>

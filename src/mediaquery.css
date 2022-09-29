@@ -24,13 +24,17 @@
     flex-direction: column;
     padding-left: 20px;
     gap: 10px;
+    position: relative;
   }
   .details-container {
-    flex-direction: row;
-    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0px;
   }
   .detail-title {
-    font-size: 1.3rem;
+    font-size: 0rem;
     flex: 1;
   }
   .detail-text {
@@ -40,8 +44,39 @@
     text-align: center;
   }
   .button-counter {
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
+  }
+
+  .counter-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .name-query-container {
+    position: absolute;
+    left: 0;
+    top: 20px;
+  }
+  .name-query {
+    font-size: 1.5rem;
+  }
+  .price-query-container {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+  .price-query {
+    font-size: 2.2rem;
+  }
+  .counter-query-container {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    top: -50px;
+  }
+  .counter-query {
+    font-size: 2rem;
   }
   .container-info-bot {
     padding-left: 20px;
