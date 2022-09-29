@@ -1,38 +1,223 @@
-.App {
-  text-align: center;
+body {
+  background: rgb(54, 203, 215);
+  background: linear-gradient(
+    293deg,
+    rgba(54, 203, 215, 1) 0%,
+    rgba(40, 147, 185, 1) 74%
+  );
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.products-container {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height: 100vh;
+}
+.home {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50px;
+  height: 50px;
+  font-size: 2rem;
+  cursor: pointer;
+}
+.menu {
+  color: #e2e2e2;
+  width: 50px;
+  height: 50px;
+}
+.product-container-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+.container-info-list {
+  position: relative;
+  width: 200px;
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: #c9c8c8;
+  border-radius: 15px;
+  margin-left: -20px;
+}
+.img-container-list {
+  background-color: #ece2e4;
+  height: 130px;
+  width: 150px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+}
+.product-img-list {
+  object-fit: contain;
+  width: 100px;
+}
+.product-name-list {
+  font-size: 1rem;
+  font-weight: 400;
+  color: rgb(17, 36, 66);
+  margin: 0 0 10px 0;
 }
 
-.App-link {
-  color: #61dafb;
+.product-price-list {
+  font-weight: 700;
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  color: rgb(17, 36, 66);
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.numbers-list-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  right: 5px;
+}
+.product-stock-title {
+  font-size: .7rem;
+  font-weight: 400;
+  color: rgb(17, 36, 66);
+  margin: 0 0 10px 0;
+}
+.product-stock {
+  font-size: .7rem;
+  font-weight: 400;
+  color: rgb(17, 36, 66);
+  margin: 0 0 10px 0;
+}
+/****** PRODUCT ******/
+.product-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: auto;
+}
+.img-container {
+  width: 350px;
+  height: 450px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(17, 36, 66);
+  background: linear-gradient(
+    293deg,
+    rgba(17, 36, 66, 1) 0%,
+    rgba(11, 22, 41, 1) 74%
+  );
+  border-radius: 15px;
+}
+.product-img {
+  width: 400px;
+  rotate: -20deg;
+  margin-left: -70px;
+}
+.container-info {
+  display: flex;
+  flex-direction: column;
+  margin-left: -40px;
+  width: 350px;
+}
+.container-info-top {
+  background-color: #c9c8c8;
+  height: 150px;
+  border-radius: 15px 15px 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+.details-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+.detail-title {
+  font-size: 1.1rem;
+  color: #2893b9;
+  flex: 1;
+  margin: 0;
+}
+.detail-text {
+  font-size: 0.8rem;
+  font-weight: 500;
+  flex: 1;
+  color: rgb(39, 38, 38);
+}
+.button-counter {
+  border: none;
+  width: 20px;
+  border-radius: 5px;
+  background-color: #e2e2e2;
+}
+.button-counter:active {
+  background-color: #a7a7a7;
+}
+.container-info-bot {
+  background-color: #e2e2e2;
+  height: 250px;
+  border-radius: 0 0 15px 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding-left: 34px;
+}
+.card-title {
+  font-size: 1rem;
+  color: #2893b9;
+  text-transform: uppercase;
+  margin: 0;
+}
+.buy-button {
+  width: 120px;
+  height: 40px;
+  background-color: rgb(54, 203, 215);
+  color: #ece2e4;
+  font-weight: 600;
+  border-radius: 10px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  border: none;
+  transition: 1s;
+  cursor: pointer;
+}
+.buy-button:hover {
+  background: rgb(40, 155, 163);
+}
+.card-type {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+.card-number {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+.card-data {
+  width: 100%;
+  flex: 2;
+  display: flex;
+  align-items: center;
+}
+.CVV {
+  padding-left: 100px;
+}
+.card-button {
+  width: 100%;
+  flex: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
